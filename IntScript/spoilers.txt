@@ -1,0 +1,18 @@
+Spoiler Warning!
+If you want to figure out how to fix the tests on your own close this file.
+
+
+
+
+
+
+
+The initial run of the tests will cause all three tests to fail with the same NPE.
+
+The init method in the ScriptRunnerTests file passes null to the ScriptRunner.  You will need to implement the OpLoader
+interface and modify the init method to construct and pass an instance of your implementation to the ScriptRunner.
+
+To implement the OpLoader interface you will need to have implementations of the Op interface to return from the loader.
+
+The tests assume that the Add & Sub ops exist.
+
